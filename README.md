@@ -17,3 +17,5 @@ A collection of Cheat Engine tables created during my learning process. These ta
 | Echoes of Dejepis       | [Game Link](https://odld25.itch.io/echoes-of-dejepis)                          | [Cheat Table Link](./cheat-tables/EchoesOfDejepis.CT)   | `True`           |
 | Echoes of Slov_cka      | [Game Link](https://odld25.itch.io/echoes-of-slov-cka)                         | [Cheat Table Link](./cheat-tables/EchoesOfSlov_cka.CT)  | `False`          |
 | Beat Around The Bush    | [Game Link](https://store.steampowered.com/app/3099730/Beat_Around_The_Bush/)  | [Cheat Table Link](./cheat-tables/BeatAroundTheBush.CT) | `True`           |
+
+Yes, as you can see in some scripts, I use 2 usernames on my pc: misof & shrek (please don't ask me why)
