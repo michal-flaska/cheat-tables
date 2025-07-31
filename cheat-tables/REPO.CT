@@ -2,16 +2,22 @@
 <CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
-      <ID>10</ID>
-      <Description>"OUTDATED VERSION"</Description>
+      <ID>18</ID>
+      <Description>"OUTDATED VERSIONS (WILL CRASH)"</Description>
       <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>2</ID>
-          <Description>"ITEMS WONT BREAK"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>{ Game   : REPO
+          <ID>10</ID>
+          <Description>"OUTDATED VERSION"</Description>
+          <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>2</ID>
+              <Description>"ITEMS WONT BREAK"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : REPO
   Version: 
   Date   : 2025-06-24
   Author : shrek
@@ -75,12 +81,12 @@ dealloc(newmem)
 18DDF9E8FAE: F3 0F 5A D2              - cvtss2sd xmm2,xmm2
 }
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>7</ID>
-          <Description>"Health does not decrease"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>{ Game   : REPO
+            </CheatEntry>
+            <CheatEntry>
+              <ID>7</ID>
+              <Description>"Health does not decrease"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : REPO
   Version: 
   Date   : 2025-06-24
   Author : shrek
@@ -144,12 +150,12 @@ dealloc(newmem)
 18C27B34E13: 41 C7 86 AC 00 00 00 00 00 00 00  - mov [r14+000000AC],00000000
 }
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>9</ID>
-          <Description>"Stamina does not decrease"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>{ Game   : REPO
+            </CheatEntry>
+            <CheatEntry>
+              <ID>9</ID>
+              <Description>"Stamina does not decrease"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>{ Game   : REPO
   Version: 
   Date   : 2025-06-24
   Author : shrek
@@ -213,20 +219,20 @@ dealloc(newmem)
 18E6F689607: F2 0F 5A E8                    - cvtsd2ss xmm5,xmm0
 }
 </AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>17</ID>
-      <Description>"OUTDATED VERSION #2"</Description>
-      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
         <CheatEntry>
-          <ID>12</ID>
-          <Description>"No stamina drain"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+          <ID>17</ID>
+          <Description>"OUTDATED VERSION #2"</Description>
+          <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>12</ID>
+              <Description>"No stamina drain"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
 alloc(newmem,2048,2918B645FD3) 
 label(returnhere)
@@ -257,12 +263,12 @@ dealloc(newmem)
 db F3 0F 11 AE A0 01 00 00
 //movss [rsi+000001A0],xmm5
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>13</ID>
-          <Description>"Wont Break"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+            </CheatEntry>
+            <CheatEntry>
+              <ID>13</ID>
+              <Description>"Wont Break"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
 alloc(newmem,2048,290EEFB0410) 
 label(returnhere)
@@ -293,12 +299,12 @@ dealloc(newmem)
 db F3 0F 11 A8 B8 00 00 00
 //movss [rax+000000B8],xmm5
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>14</ID>
-          <Description>"God Mode"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+            </CheatEntry>
+            <CheatEntry>
+              <ID>14</ID>
+              <Description>"God Mode"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
 alloc(newmem,2048,290EF044F86) 
 label(returnhere)
@@ -329,12 +335,12 @@ dealloc(newmem)
 db 41 89 86 B4 00 00 00
 //mov [r14+000000B4],eax
 </AssemblerScript>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>15</ID>
-          <Description>"Turn this on, and put something in the extraction. Trust me"</Description>
-          <VariableType>Auto Assembler Script</VariableType>
-          <AssemblerScript>[ENABLE]
+            </CheatEntry>
+            <CheatEntry>
+              <ID>15</ID>
+              <Description>"Turn this on, and put something in the extraction. Trust me"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
 alloc(newmem,2048,2918B687704) 
 label(returnhere)
@@ -365,16 +371,18 @@ dealloc(newmem)
 db C7 46 64 00 00 00 00
 //mov [rsi+64],00000000
 </AssemblerScript>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>16</ID>
-      <Description>"Auto Assemble script"</Description>
+      <ID>20</ID>
+      <Description>"Inf. Stamina"</Description>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
 //code from here to '[DISABLE]' will be used to enable the cheat
-alloc(newmem,2048,250F620CDE0) 
+alloc(newmem,2048,222110C0F33) 
 label(returnhere)
 label(originalcode)
 label(exit)
@@ -388,7 +396,7 @@ nop
 exit:
 jmp returnhere
 
-250F620CDE0:
+222110C0F33:
 jmp newmem
 nop 3
 returnhere:
@@ -399,9 +407,9 @@ returnhere:
 [DISABLE]
 //code from here till the end of the code will be used to disable the cheat
 dealloc(newmem)
-250F620CDE0:
-db F3 0F 11 A8 B8 00 00 00
-//movss [rax+000000B8],xmm5
+222110C0F33:
+db F3 0F 11 AE A0 01 00 00
+//movss [rsi+000001A0],xmm5
 </AssemblerScript>
     </CheatEntry>
   </CheatEntries>
@@ -912,6 +920,34 @@ db F3 0F 11 A8 B8 00 00 00
         <Byte>5A</Byte>
         <Byte>C0</Byte>
         <Byte>F2</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :movss [rsi+000001A0],xmm5</Description>
+      <AddressString>222110C0F33</AddressString>
+      <Before>
+        <Byte>C1</Byte>
+        <Byte>F2</Byte>
+        <Byte>0F</Byte>
+        <Byte>5A</Byte>
+        <Byte>E8</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>AE</Byte>
+        <Byte>A0</Byte>
+        <Byte>01</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8B</Byte>
+        <Byte>FE</Byte>
+        <Byte>66</Byte>
+        <Byte>0F</Byte>
       </After>
     </CodeEntry>
   </CheatCodes>
