@@ -1,6 +1,6 @@
-# Collection of Cheats & Trainers
+# Collection of my own Cheats & Trainers made using Cheat Engine
 
-A collection of Cheat Engine tables created during my learning process. These tables demonstrate memory editing, value manipulation, pointermaps, pointerscans and basic scripting using Cheat Engine.
+A collection of Cheat Engine tables created during my learning process. These tables demonstrate memory editing, value manipulation, pointermaps, pointerscans, assembly and more using Cheat Engine.
 
 > [!IMPORTANT]
 > This repository is for **educational and demonstration purposes only**. It exists solely to showcase my own work. I do **not** condone or take responsibility for any misuse, abuse, or redistribution of these cheat tables.
@@ -23,4 +23,4 @@ A collection of Cheat Engine tables created during my learning process. These ta
 > [!NOTE]
 > Most of the cheat tables are made for Steam version of the game. Why? Because steam is on top 🔥
 
-And yes, as you can see in some scripts, I use 2 usernames on my pc: misof & shrek (please don't ask me why)
+And yes, as you can see in some scripts, I use 2 usernames on my pc: misof & shrek (please don't ask me why shrek)
