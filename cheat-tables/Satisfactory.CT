@@ -19,6 +19,123 @@
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
+              <ID>26</ID>
+              <Description>"BERYL NUTS"</Description>
+              <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>25</ID>
+                  <Description>"Big nut boost from picking it up from trees "</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+add r8d,64 // Add 64 in hex (100 in decimal) resources - You can customize it
+add [r13+28],r8d
+mov rax,[rsi]
+
+exit:
+jmp returnhere
+
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB:
+jmp newmem
+nop 2
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB:
+db 45 01 45 28 48 8B 06
+//add [r13+28],r8d
+//mov rax,[rsi]
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>22</ID>
+                  <Description>"Eating it increases its count in inventory"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+add [rbx+rax+28],r13d
+
+exit:
+jmp returnhere
+
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84:
+jmp newmem
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84:
+db 44 29 6C 03 28
+//sub [rbx+rax+28],r13d
+</AssemblerScript>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>23</ID>
+                  <Description>"Eating it does not decrease its count in inventory"</Description>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+nop
+
+exit:
+jmp returnhere
+
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84:
+jmp newmem
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7FED84:
+db 44 29 6C 03 28
+//sub [rbx+rax+28],r13d
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
               <ID>3</ID>
               <Description>"Crafting will add instead of decrease"</Description>
               <VariableType>Auto Assembler Script</VariableType>
@@ -167,6 +284,45 @@ db 29 7C 18 28 49 8B 06
 //mov rax,[r14]
 </AssemblerScript>
             </CheatEntry>
+            <CheatEntry>
+              <ID>15</ID>
+              <Description>"Big mining resource boost (configurable)"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+add r8d,64        // 64 in hex means 100 in decimal. You can configure it to any value you want :)
+add [r13+28],r8d
+mov rax,[rsi]
+
+exit:
+jmp returnhere
+
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB:
+jmp newmem
+nop 2
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+7CD8EB:
+db 45 01 45 28 48 8B 06
+//add [r13+28],r8d
+//mov rax,[rsi]
+</AssemblerScript>
+            </CheatEntry>
           </CheatEntries>
         </CheatEntry>
       </CheatEntries>
@@ -193,6 +349,31 @@ db 29 7C 18 28 49 8B 06
           <Description>"Cable"</Description>
           <VariableType>4 Bytes</VariableType>
           <Address>21EBB7241D8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>14</ID>
+          <Description>"Iron ore"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>21EBB724088</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>21</ID>
+          <Description>"nut"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>21FCAC5E7D8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>16</ID>
+      <Description>"dwadwa"</Description>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"No description"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>21EBB724088</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
