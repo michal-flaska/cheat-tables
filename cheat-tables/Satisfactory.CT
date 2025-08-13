@@ -136,6 +136,42 @@ db 44 29 6C 03 28
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
+              <ID>1</ID>
+              <Description>"EVERYONE HAS GOD MODE"</Description>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+alloc(newmem,2048,"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+80B45A) 
+label(returnhere)
+label(originalcode)
+label(exit)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+
+originalcode:
+nop
+
+exit:
+jmp returnhere
+
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+80B45A:
+jmp newmem
+nop 3
+returnhere:
+
+
+ 
+ 
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+dealloc(newmem)
+"FactoryGameSteam-FactoryGame-Win64-Shipping.dll"+80B45A:
+db F3 0F 11 8D 64 01 00 00
+//movss [rbp+FactoryGameSteam-CoreUObject-Win64-Shipping.dtor_list_head+24],xmm1
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
               <ID>3</ID>
               <Description>"Crafting will add instead of decrease"</Description>
               <VariableType>Auto Assembler Script</VariableType>
@@ -362,18 +398,11 @@ db 45 01 45 28 48 8B 06
           <VariableType>4 Bytes</VariableType>
           <Address>21FCAC5E7D8</Address>
         </CheatEntry>
-      </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>16</ID>
-      <Description>"dwadwa"</Description>
-      <GroupHeader>1</GroupHeader>
-      <CheatEntries>
         <CheatEntry>
-          <ID>24</ID>
+          <ID>0</ID>
           <Description>"No description"</Description>
-          <VariableType>4 Bytes</VariableType>
-          <Address>21EBB724088</Address>
+          <VariableType>Float</VariableType>
+          <Address>1C61B949264</Address>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
